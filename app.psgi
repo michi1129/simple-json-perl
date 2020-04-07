@@ -7,7 +7,7 @@ my $app = sub {
   return [
     200,
     [ "Content-Type", "text/html" ],
-    [ "Hello $env->{REMOTE_ADDR}" ],
+    [ "Hello, from $env->{REMOTE_ADDR}." ],
   ];
 };
 
